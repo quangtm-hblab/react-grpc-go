@@ -1,12 +1,12 @@
 # react-grpc-go
-- Make proto file
-- Generate protobuf files by [buf](https://github.com/bufbuild/buf)
-  - init buf project
+- create .proto file
+## [Opt 1] Generate protobuf files by [buf](https://github.com/bufbuild/buf)
+  - init buf project \
   `buf mod init`
-  - create buf.gen.yaml file
-  - generate protobuf
+  - create file buf.gen.yaml 
+  - generate protobuf \
   `buf generate`
-## Cach generate truc tiep bang protoc
+## [Opt 2]Cach generate truc tiep bang protoc
  - generate G0
    protoc --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative routeguide/route_guide.proto
  - generate Typescript:
