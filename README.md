@@ -1,12 +1,12 @@
 # react-grpc-go
--Make proto file
--Generate protobuf files
+- Make proto file
+- Generate protobuf files
   buf mod init
   buf generate
- ##Cach generate truc tiep bang protoc
-  -generate G0
+## Cach generate truc tiep bang protoc
+ - generate G0
    protoc --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative routeguide/route_guide.proto
-  -generate Typescript:
+ - generate Typescript:
    protoc -I=. ./greet.proto --js_out=import_style=commonjs:./src/output --grpc-web_out=import_style=typescript,mode=grpcwebtext:./src/output
    
 ##import
